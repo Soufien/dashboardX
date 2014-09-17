@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+  <!-- Inherit our applications main module.                      -->
+  <inherits name='org.ooredoo.pfe.DashboardX' />
+
+  <!-- Specify the path to any remote services.                   -->
+  <servlet path="/DashboardX/greet" class="org.ooredoo.pfe.server.GreetingServiceImpl" />
+
+</module>
