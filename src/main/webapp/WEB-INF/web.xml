@@ -6,10 +6,22 @@
 <web-app>
 
   <!-- Servlets -->
+  
+  
   <servlet>
     <servlet-name>greetServlet</servlet-name>
     <servlet-class>org.ooredoo.pfe.server.GreetingServiceImpl</servlet-class>
   </servlet>
+  
+  <servlet>
+    <servlet-name>loginServlet</servlet-name>
+    <servlet-class>org.ooredoo.pfe.server.LoginServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>loginServlet</servlet-name>
+    <url-pattern>/DashboardX/login</url-pattern>
+  </servlet-mapping>
 
   <servlet-mapping>
     <servlet-name>greetServlet</servlet-name>

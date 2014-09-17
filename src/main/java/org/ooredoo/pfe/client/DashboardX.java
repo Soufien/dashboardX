@@ -13,6 +13,7 @@ import com.google.gwt.user.client.ui.RootPanel;
  * Entry point classes define <code>onModuleLoad()</code>.
  */
 public class DashboardX implements EntryPoint {
+  private final LoginServiceAsync loginService = GWT.create(LoginService.class);
   private final GreetingServiceAsync greetingService = GWT.create(GreetingService.class);
 
 
@@ -29,20 +30,43 @@ public class DashboardX implements EntryPoint {
        * Fired when the user clicks on the sendButton.
        */
       public void onClick(ClickEvent event) {
-        sendNameToServer();
+    	  sendNameToServer1();
       }
+      
+      private void sendNameToServer1() {
 
-      private void sendNameToServer() {
+    	  loginService.authenticateUser("Soufien", "Hidouri", new AsyncCallback<String>() {
 
-        greetingService.greetServer("Soufien", new AsyncCallback<String>() {
-          public void onFailure(Throwable caught) {
-            Window.alert("Failure call");
-          }
+			public void onFailure(Throwable caught) {
+				// TODO Auto-generated method stub
+				Window.alert("Failure");
+				
+			}
 
-          public void onSuccess(String result) {
-           Window.alert(result);
-          }
-        });
+			public void onSuccess(String result) {
+				// TODO Auto-generated method stub
+				Window.alert("Sucess");
+				
+			}
+		});
+      }
+      
+      private void sendNameToServer2() {
+
+    	  greetingService.greetServer("Soufien", new AsyncCallback<String>() {
+
+			public void onFailure(Throwable caught) {
+				// TODO Auto-generated method stub
+				Window.alert("Failure");
+				
+			}
+
+			public void onSuccess(String result) {
+				// TODO Auto-generated method stub
+				Window.alert("Success");
+				
+			}
+		});
       }
     }
 
