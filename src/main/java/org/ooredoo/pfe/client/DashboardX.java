@@ -1,5 +1,8 @@
 package org.ooredoo.pfe.client;
 
+import org.ooredoo.pfe.client.services.LoginService;
+import org.ooredoo.pfe.client.services.LoginServiceAsync;
+
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
@@ -14,8 +17,6 @@ import com.google.gwt.user.client.ui.RootPanel;
  */
 public class DashboardX implements EntryPoint {
   private final LoginServiceAsync loginService = GWT.create(LoginService.class);
-  private final GreetingServiceAsync greetingService = GWT.create(GreetingService.class);
-
 
   /**
    * This is the entry point method.
@@ -45,25 +46,7 @@ public class DashboardX implements EntryPoint {
 
 			public void onSuccess(String result) {
 				// TODO Auto-generated method stub
-				Window.alert("Sucess");
-				
-			}
-		});
-      }
-      
-      private void sendNameToServer2() {
-
-    	  greetingService.greetServer("Soufien", new AsyncCallback<String>() {
-
-			public void onFailure(Throwable caught) {
-				// TODO Auto-generated method stub
-				Window.alert("Failure");
-				
-			}
-
-			public void onSuccess(String result) {
-				// TODO Auto-generated method stub
-				Window.alert("Success");
+				Window.alert(result);
 				
 			}
 		});

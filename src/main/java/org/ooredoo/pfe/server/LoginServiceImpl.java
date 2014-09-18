@@ -1,6 +1,6 @@
 package org.ooredoo.pfe.server;
 
-import org.ooredoo.pfe.client.LoginService;
+import org.ooredoo.pfe.client.services.LoginService;
 
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 
