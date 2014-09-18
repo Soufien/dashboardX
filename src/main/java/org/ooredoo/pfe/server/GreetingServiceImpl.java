@@ -1,7 +1,7 @@
 package org.ooredoo.pfe.server;
 
-import org.ooredoo.pfe.client.GreetingService;
-import org.ooredoo.pfe.shared.FieldVerifier;
+import org.ooredoo.pfe.client.services.GreetingService;
+
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 
 /**

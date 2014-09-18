@@ -5,32 +5,52 @@
 
 <web-app>
 
-  <!-- Servlets -->
-  
-  
-  <servlet>
-    <servlet-name>greetServlet</servlet-name>
-    <servlet-class>org.ooredoo.pfe.server.GreetingServiceImpl</servlet-class>
-  </servlet>
-  
-  <servlet>
-    <servlet-name>loginServlet</servlet-name>
-    <servlet-class>org.ooredoo.pfe.server.LoginServiceImpl</servlet-class>
-  </servlet>
-  
-  <servlet-mapping>
-    <servlet-name>loginServlet</servlet-name>
-    <url-pattern>/DashboardX/login</url-pattern>
-  </servlet-mapping>
+	<!-- Servlets -->
 
-  <servlet-mapping>
-    <servlet-name>greetServlet</servlet-name>
-    <url-pattern>/DashboardX/greet</url-pattern>
-  </servlet-mapping>
 
-  <!-- Default page to serve -->
-  <welcome-file-list>
-    <welcome-file>DashboardX.html</welcome-file>
-  </welcome-file-list>
+	<servlet>
+		<servlet-name>greetServlet</servlet-name>
+		<servlet-class>org.ooredoo.pfe.server.GreetingServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>searchServlet</servlet-name>
+		<servlet-class>org.ooredoo.pfe.server.MySearchServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>loginServlet</servlet-name>
+		<servlet-class>org.ooredoo.pfe.server.LoginServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>chartsServlet</servlet-name>
+		<servlet-class>org.ooredoo.pfe.server.ChartsServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>loginServlet</servlet-name>
+		<url-pattern>/DashboardX/login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>searchServlet</servlet-name>
+		<url-pattern>/DashboardX/search</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>greetServlet</servlet-name>
+		<url-pattern>/DashboardX/greet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>chartsServlet</servlet-name>
+		<url-pattern>/DashboardX/charts</url-pattern>
+	</servlet-mapping>
+
+	<!-- Default page to serve -->
+	<welcome-file-list>
+		<welcome-file>DashboardX.html</welcome-file>
+	</welcome-file-list>
 
 </web-app>
