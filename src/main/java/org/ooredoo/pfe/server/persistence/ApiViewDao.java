@@ -14,7 +14,7 @@ public class ApiViewDao {
 
     private final static String SEARCH_SQL = "SELECT * FROM api_key_or_method_usage_view e WHERE MATCH () AGAINST (:criteria IN BOOLEAN MODE)";
 
-    @PersistenceContext(unitName = "ooredoodashboard")
+    @PersistenceContext(unitName = "dashboardX")
     EntityManager entityManager;
 
     public void persist(ApiViewEntity entity) {
