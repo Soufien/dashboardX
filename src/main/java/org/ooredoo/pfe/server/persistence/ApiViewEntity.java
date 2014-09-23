@@ -1,5 +1,7 @@
 package org.ooredoo.pfe.server.persistence;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -11,9 +13,14 @@ import org.ooredoo.pfe.client.ApiView;
 
 @Entity
 @Table(name = "api_key_or_method_usage_view")
-public class ApiViewEntity {
+public class ApiViewEntity implements Serializable{
 	
-    @Id
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 6078064136284279791L;
+
+	@Id
 	@Column(name="metric_id")
 	private String metric_id;
 	

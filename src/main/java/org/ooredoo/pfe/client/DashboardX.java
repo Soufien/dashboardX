@@ -51,7 +51,7 @@ public class DashboardX implements EntryPoint {
       
       private void sendNameToServer1() {
 
-    	  loginService.authenticateUser("Soufien", "Hidouri", new AsyncCallback<String>() {
+    	  loginService.authenticateUser("admin", "admin", new AsyncCallback<String>() {
 
 			public void onFailure(Throwable caught) {
 				// TODO Auto-generated method stub
@@ -76,7 +76,7 @@ public class DashboardX implements EntryPoint {
 		
 		public void onClick(ClickEvent event) {
 			// TODO Auto-generated method stub
-			greetingService.greetServer("Greeting", new AsyncCallback<String>() {
+			greetingService.greetServer("GreetingService", new AsyncCallback<String>() {
 
 				public void onFailure(Throwable caught) {
 					// TODO Auto-generated method stub
@@ -86,7 +86,7 @@ public class DashboardX implements EntryPoint {
 
 				public void onSuccess(String result) {
 					// TODO Auto-generated method stub
-					Window.alert("Success greeting "+result);
+					Window.alert(result);
 				}
 			});
 			
@@ -97,7 +97,7 @@ btn3.addClickHandler(new ClickHandler() {
 		
 		public void onClick(ClickEvent event) {
 			// TODO Auto-generated method stub
-			chartService.helloChartsService("Charts", new AsyncCallback<String>() {
+			chartService.helloChartsService("chartsService", new AsyncCallback<String>() {
 
 				public void onFailure(Throwable caught) {
 					// TODO Auto-generated method stub
@@ -107,7 +107,7 @@ btn3.addClickHandler(new ClickHandler() {
 
 				public void onSuccess(String result) {
 					// TODO Auto-generated method stub
-					Window.alert("Success charts "+result);
+					Window.alert(result);
 				}
 			});
 			
@@ -118,7 +118,7 @@ btn4.addClickHandler(new ClickHandler() {
 	
 	public void onClick(ClickEvent event) {
 		// TODO Auto-generated method stub
-		mySearchService.helloSearchService("Search", new AsyncCallback<String>() {
+		mySearchService.helloSearchService("searchService", new AsyncCallback<String>() {
 
 			public void onFailure(Throwable caught) {
 				// TODO Auto-generated method stub
@@ -128,7 +128,7 @@ btn4.addClickHandler(new ClickHandler() {
 
 			public void onSuccess(String result) {
 				// TODO Auto-generated method stub
-				Window.alert("Success search "+result);
+				Window.alert(result);
 			}
 		});
 		

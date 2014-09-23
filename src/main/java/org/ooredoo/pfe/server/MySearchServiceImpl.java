@@ -2,15 +2,29 @@ package org.ooredoo.pfe.server;
 
 import org.ooredoo.pfe.client.services.MySearchService;
 
-import com.google.gwt.user.server.rpc.RemoteServiceServlet;
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 
-@SuppressWarnings("serial")
-public class MySearchServiceImpl extends RemoteServiceServlet implements MySearchService{
+import org.springframework.stereotype.Service;
+
+import com.google.gwt.user.client.rpc.RemoteService;
+
+@Service("serachservice")
+public class MySearchServiceImpl implements MySearchService, RemoteService{
+	
+	@PostConstruct
+    public void init() throws Exception { 
+    	
+    }
+	@PreDestroy
+    public void destroy() { 
+		
+	}
 
 	public String helloSearchService(String input)
 			throws IllegalArgumentException {
 		// TODO Auto-generated method stub
-		return input;
+		return "Hello from server "+input;
 	}
 
 }

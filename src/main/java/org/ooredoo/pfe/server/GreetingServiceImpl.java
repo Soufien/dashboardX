@@ -2,17 +2,32 @@ package org.ooredoo.pfe.server;
 
 import org.ooredoo.pfe.client.services.GreetingService;
 
-import com.google.gwt.user.server.rpc.RemoteServiceServlet;
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
+import org.springframework.stereotype.Service;
+
+import com.google.gwt.user.client.rpc.RemoteService;
 
 /**
  * The server side implementation of the RPC service.
  */
-@SuppressWarnings("serial")
-public class GreetingServiceImpl extends RemoteServiceServlet implements
-    GreetingService {
+
+@Service("greetingservice")
+public class GreetingServiceImpl implements
+    GreetingService, RemoteService {
+	
+	@PostConstruct
+    public void init() throws Exception { 
+    	
+    }
+	@PreDestroy
+    public void destroy() { 
+		
+	}
 
   public String greetServer(String input) throws IllegalArgumentException {
-    return input;
+    return "Hello from server "+input;
   }
 
 }
