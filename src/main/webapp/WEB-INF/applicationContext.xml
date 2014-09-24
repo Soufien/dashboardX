@@ -10,9 +10,12 @@
 
     <context:annotation-config />
 
-    <tx:annotation-driven />
-
-    <context:component-scan base-package="org.ooredoo.pfe.server" />
+    <context:component-scan base-package="org.ooredoo.pfe" />
+    
+<!--     <bean id="chartsservice" class="org.ooredoo.pfe.server.ChartsServiceImpl"/>
+    <bean id="greetingservice" class="org.ooredoo.pfe.server.GreetingServiceImpl"/>
+    <bean id="loginservice" class="org.ooredoo.pfe.server.LoginServiceImpl"/>
+    <bean id="serachservice" class="org.ooredoo.pfe.server.MySearchServiceImpl"/> -->
 
     <bean class="org.springframework.orm.jpa.LocalEntityManagerFactoryBean" id="entityManagerFactory">
         <property name="persistenceUnitName" value="dashboardX" />

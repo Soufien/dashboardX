@@ -1,16 +1,13 @@
 package org.ooredoo.pfe.server;
 
-import org.ooredoo.pfe.client.services.ChartsService;
-
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
+import org.ooredoo.pfe.client.services.ChartsService;
 import org.springframework.stereotype.Service;
 
-import com.google.gwt.user.client.rpc.RemoteService;
-
-@Service("chartsservice")
-public class ChartsServiceImpl implements ChartsService, RemoteService{
+@Service("chartsService")
+public class ChartsServiceImpl implements ChartsService{
 	
 	@PostConstruct
     public void init() throws Exception { 

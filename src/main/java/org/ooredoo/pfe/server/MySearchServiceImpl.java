@@ -9,8 +9,8 @@ import org.springframework.stereotype.Service;
 
 import com.google.gwt.user.client.rpc.RemoteService;
 
-@Service("serachservice")
-public class MySearchServiceImpl implements MySearchService, RemoteService{
+@Service("mySearchService")
+public class MySearchServiceImpl implements MySearchService{
 	
 	@PostConstruct
     public void init() throws Exception { 

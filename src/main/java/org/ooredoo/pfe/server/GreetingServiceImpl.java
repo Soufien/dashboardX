@@ -13,9 +13,9 @@ import com.google.gwt.user.client.rpc.RemoteService;
  * The server side implementation of the RPC service.
  */
 
-@Service("greetingservice")
+@Service("greetingService")
 public class GreetingServiceImpl implements
-    GreetingService, RemoteService {
+    GreetingService{
 	
 	@PostConstruct
     public void init() throws Exception { 

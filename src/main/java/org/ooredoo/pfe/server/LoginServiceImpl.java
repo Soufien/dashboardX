@@ -12,8 +12,8 @@ import org.springframework.stereotype.Service;
 
 import com.google.gwt.user.client.rpc.RemoteService;
 
-@Service("loginservice")
-public class LoginServiceImpl implements LoginService, RemoteService {
+@Service("loginService")
+public class LoginServiceImpl implements LoginService{
 
 //	@Autowired
 //    private UserDao dao;
