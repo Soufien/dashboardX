@@ -80,7 +80,7 @@
   <classpathentry kind="var" path="M2_REPO/org/apache/solr/solr-core/3.6.2/solr-core-3.6.2.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/apache/solr/solr-solrj/3.6.2/solr-solrj-3.6.2.jar"/>
   <classpathentry kind="var" path="M2_REPO/commons-io/commons-io/2.2/commons-io-2.2.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-highlighter/3.6.2/lucene-highlighter-3.6.2.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-memory/3.6.2/lucene-memory-3.6.2.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-kuromoji/3.6.2/lucene-kuromoji-3.6.2.jar"/>
@@ -118,4 +118,8 @@
   <classpathentry kind="var" path="M2_REPO/com/github/gwtbootstrap/gwt-bootstrap/2.1.0.0-SNAPSHOT/gwt-bootstrap-2.1.0.0-SNAPSHOT.jar"/>
   <classpathentry kind="var" path="M2_REPO/com/googlecode/gwt-charts/gwt-charts/0.9.10/gwt-charts-0.9.10.jar"/>
   <classpathentry kind="var" path="M2_REPO/joda-time/joda-time/2.3/joda-time-2.3.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/hibernate/hibernate-annotations/3.5.6-Final/hibernate-annotations-3.5.6-Final.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/hibernate/hibernate-commons-annotations/3.2.0.Final/hibernate-commons-annotations-3.2.0.Final.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.0.Final/hibernate-jpa-2.0-api-1.0.0.Final.jar"/>
+  <classpathentry kind="var" path="M2_REPO/log4j/log4j/1.2.17/log4j-1.2.17.jar"/>
 </classpath>

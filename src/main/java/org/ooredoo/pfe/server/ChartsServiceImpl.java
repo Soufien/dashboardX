@@ -6,7 +6,7 @@ import javax.annotation.PreDestroy;
 import org.ooredoo.pfe.client.services.ChartsService;
 import org.springframework.stereotype.Service;
 
-@Service("chartsService")
+//@Service("chartsService")
 public class ChartsServiceImpl implements ChartsService{
 	
 	@PostConstruct

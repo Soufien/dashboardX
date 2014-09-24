@@ -8,14 +8,12 @@
 	            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
 	            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
 
-    <context:annotation-config />
-
     <context:component-scan base-package="org.ooredoo.pfe" />
     
-<!--     <bean id="chartsservice" class="org.ooredoo.pfe.server.ChartsServiceImpl"/>
+    <bean id="chartsservice" class="org.ooredoo.pfe.server.ChartsServiceImpl"/>
     <bean id="greetingservice" class="org.ooredoo.pfe.server.GreetingServiceImpl"/>
     <bean id="loginservice" class="org.ooredoo.pfe.server.LoginServiceImpl"/>
-    <bean id="serachservice" class="org.ooredoo.pfe.server.MySearchServiceImpl"/> -->
+    <bean id="serachservice" class="org.ooredoo.pfe.server.MySearchServiceImpl"/>
 
     <bean class="org.springframework.orm.jpa.LocalEntityManagerFactoryBean" id="entityManagerFactory">
         <property name="persistenceUnitName" value="dashboardX" />

@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 
 import com.google.gwt.user.client.rpc.RemoteService;
 
-@Service("loginService")
+//@Service("loginService")
 public class LoginServiceImpl implements LoginService{
 
 //	@Autowired

@@ -13,7 +13,7 @@ import com.google.gwt.user.client.rpc.RemoteService;
  * The server side implementation of the RPC service.
  */
 
-@Service("greetingService")
+//@Service("greetingService")
 public class GreetingServiceImpl implements
     GreetingService{
 	
